@@ -252,7 +252,7 @@ public:
             else if(line.substr(words[0].first,words[0].second)=="mtllib")
             {
                 getmat=loadMaterials(line.substr(words[1].first,words[1].second));
-            }else if(line.substr(words[0].first,words[0].second)=="g")
+            }else if(line.substr(words[0].first,words[0].second)=="o")
             {
                 group.push_back(Group{line.substr(words[1].first,words[1].second)});
             }

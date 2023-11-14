@@ -144,6 +144,8 @@ void KeyUp(unsigned char ch,int x,int y)
 
 int main(int argC,char* argV[ ])
 {
+    cout<<"camera direction left right up down arrow"<<endl;
+    cout<<"camera move with a s d w z x"<<endl;
     glutInit(&argC,argV);
     glutInitWindowSize(600,600);
     glutInitWindowPosition(100,150);
@@ -156,7 +158,7 @@ int main(int argC,char* argV[ ])
     glutKeyboardUpFunc(KeyUp);
     glutSpecialFunc(specialKey);
 
-    x.loadFile("world.obj");
+    x.loadFile("LowPolyCars.obj");
     glutMainLoop();
 
     return 0;
